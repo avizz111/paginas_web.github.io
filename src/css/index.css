@@ -1,0 +1,153 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+    color: #f0ffff;
+    font-family: Georgia,cursiva,cursive,Minecraft;
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
+#hd-img{
+    width: 100vw;
+    aspect-ratio: 21/9;
+}
+
+header{
+    text-align: center;
+    font-size: 5vw;
+}
+
+h2{
+    font-size: 4vw;
+}
+
+@font-face{
+    font-family: cursiva;
+    src:url(../CasualCursive-Regular.ttf);
+}
+@font-face{
+    font-family: Minecraft;
+    src: url(../Minecraft.ttf);
+}
+
+.mn-div{
+    outline: 2px solid #f0ffff;
+    border-radius: 3vmin;
+    flex-wrap: wrap;
+    display: inline-block;
+    padding: 5vmin;
+    margin: 5vmin;
+    text-align: center;
+    transition: all 0.8s;
+    width: 28vmin;
+    aspect-ratio: 19/32;
+    background-color: #1c1c1c;
+
+}
+
+.mn-div:hover{
+    transform: translateX(-3vmin) translateY(-3vmin);
+}
+
+.fa-brands{
+    font-size: 30vmin;
+}
+
+.fa-html5{
+    color: rgb(255, 0, 0);
+    text-shadow: 
+    0px 0px 2px #f00,
+    0px 0px 4px #f00,
+    0px 0px 8px #f00,
+    0px 0px 16px #f00
+    ;
+}
+.fa-css3-alt{
+    color: #00f;
+    text-shadow: 
+    0px 0px 2px #00f,
+    0px 0px 4px #00f,
+    0px 0px 8px #00f,
+    0px 0px 16px #00f
+    ;
+}
+.fa-square-js{
+    color: rgb(255, 255, 0);
+    text-shadow: 
+    0px 0px 2px rgb(255, 255, 0),
+    0px 0px 4px rgb(255, 255, 0),
+    0px 0px 8px rgb(255, 255, 0),
+    0px 0px 16px rgb(255, 255, 0)
+    ;
+}
+.fa-angular{
+    color: #DD0031;
+    text-shadow: 
+    0px 0px 2px #DD0031,
+    0px 0px 4px #DD0031,
+    0px 0px 8px #DD0031,
+    0px 0px 16px #DD0031
+    ;
+}
+
+button{
+    background: transparent;
+    color: #f0ffff;
+    font-family: Georgia,cursiva,cursive,Minecraft;
+    border: 1px #f0ffff solid;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    font-size: 3vw;
+}
+
+a{
+    color: #f0ffff;
+    text-decoration: none;
+}
+
+a:nth-child(1):hover .mn-div{
+    box-shadow: 3vmin 3vmin 20px #f00;
+}
+
+a:nth-child(2):hover .mn-div{
+    box-shadow: 3vmin 3vmin 20px #00f;
+}
+
+a:nth-child(3):hover .mn-div{
+    box-shadow: 3vmin 3vmin 20px rgb(255, 255, 0);
+}
+
+a:nth-child(4):hover .mn-div{
+    box-shadow: 3vmin 3vmin 20px #DD0031;
+}
+
+#foot{
+    width: 100vw;
+    height: 30vh;
+    background-color: #1c1c1c;
+    position: static;
+    animation: border_color 4s linear 0s infinite;
+}
+
+#ft-p{
+    display: inline-block;
+    position: relative;
+    top: 40%;
+    left: 40%;
+}
+
+@keyframes border_color {
+    0%,100%{
+        border-top: #f00 solid 2px;
+    }
+    25%{
+        border-top: #00f solid 2px;
+    }
+    50%{
+        border-top: rgb(255, 255, 0) solid 2px;
+    }
+    75%{
+        border-top: #DD0031 solid 2px;
+    }
+}
